@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Healthcare Database for Cats</title>
+    
+    <!-- Tailwind CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-blue-50">
+
+    <header class="bg-indigo-500 text-white p-4">
+        <h1 class="text-2xl">Fake Healthcare Database for Cats</h1>
+        <nav>
+            <ul class="flex space-x-4">
+                <li><a href="/" class="hover:underline">Homepage</a></li>
+                <li><a href="/index" class="hover:underline">Biopsy Results</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="p-4">
+
+        {% block content %}
+            <p> You are viewing a fake healthcare database for cats!</p>
+            </br>
+            <p>None of this healthcare data is real!</p>
+            </br>
+            <p>Can cats read?</p>
+        {% endblock %}
+
+    </main>
+
+    <footer class="bg-yellow-600 text-white p-4 mt-6">
+        <p>© 2023 Just Another Fake Healthcare Database (for cats). All Rights Reserved...but not really!</p>
+    </footer>
+</body>
+
+</html>
